@@ -1,4 +1,4 @@
-/* --- General Body Styling --- */
+/* Base */
 body {
   font-family: Arial, sans-serif;
   background-color: #e9eef2;
@@ -7,28 +7,38 @@ body {
   padding: 1.25rem; /* 20px */
 }
 
-/* --- Main Title Styling --- */
+/* Main title */
 h1 {
   text-align: center;
   color: #2c3e50;
   font-size: 2.5rem; /* 40px */
 }
 
-/* --- Input and Button Container --- */
+/* Section titles */
+h2 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.625rem; /* 10px */
+  color: #2c3e50;
+  font-size: 1.5rem; /* 24px */
+}
+
+/* Input and button container */
 .input-container {
   text-align: center;
   margin-bottom: 2.5rem;
   padding: 0.625rem;
 }
 
+/* Input field */
 #new-task {
   padding: 0.625rem; /* 10px */
   width: 18.75rem; /* 300px */
-  border: 1px solid #ccc; /* DETAIL: Fixed border */
+  border: 1px solid #ccc;
   border-radius: 0.3125rem; /* 5px */
   font-size: 1rem; /* 16px */
 }
 
+/* Add task button */
 #add-task-button {
   padding: 0.625rem 0.9375rem; /* 10px 15px */
   background-color: #3498db;
@@ -44,39 +54,33 @@ h1 {
   background-color: #2980b9;
 }
 
-/* --- THE FLEXBOX MAGIC FOR COLUMNS --- */
+/* Task list container */
 .list-container {
   display: flex;
   justify-content: space-around;
   gap: 1.25rem; /* 20px */
 }
 
-/* --- Styling for Both Columns --- */
+/* Task columns */
 .todo-column,
 .completed-column {
   background-color: #ffffff;
   padding: 1.25rem; /* 20px */
   border-radius: 0.5rem; /* 8px */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* DETAIL: Fixed shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 45%;
 }
 
-h2 {
-  border-bottom: 2px solid #3498db; /* DETAIL: Fixed border */
-  padding-bottom: 0.625rem; /* 10px */
-  color: #2c3e50;
-  font-size: 1.5rem; /* 24px */
-}
-
-/* --- List Styling --- */
+/* Task lists */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Task items */
 li {
   padding: 0.75rem; /* 12px */
-  border-bottom: 1px solid #eee; /* DETAIL: Fixed border */
+  border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
   font-size: 1rem; /* 16px */
@@ -90,7 +94,7 @@ li input[type='checkbox'] {
   margin-right: 0.625rem; /* 10px */
 }
 
-/* --- Specific Styling for Completed Tasks --- */
+/* Completed tasks */
 #completed-list li {
   text-decoration: line-through;
   color: #95a5a6;
